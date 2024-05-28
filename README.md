@@ -54,9 +54,7 @@ Do you have Azure Application Insights and Application Insights Profiler enabled
 1. Click the following links to set up [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=bicep) and [Application Insights Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler).
 2. If you don't want to set those up, go to Option 2 for a lightweight version of the VS Code Extension.
 
-If you already have those set up, you have two ways to access your Code Optimizations: 
-1. [Click here](https://aka.ms/CodeOptimizations) to view your Code Optimizations for each resource.
-2. Go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
+If you already have those set up, go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
 
 ![](images/1.png)
 
@@ -72,13 +70,13 @@ Open the repo you have insights for in Code Optimizations. Our extension introdu
 
 #### @code_optimizations /connect
 
-To use this command, you will need the app id for your application. Go to your Code Optimizations resource and in the top right search bar, type in "api" and click on `API Access`, as shown in the screenshot below:
+To use this command, you will need the App ID for your application. Go to your Application Insights resource and in the top right search bar, type in "api" and click on `API Access`, as shown in the screenshot below:
 
 ![](images/7.png)
 
-You should see your app id on the right.
+You should see your App ID on the right.
 
-Once you have the app id, the connect command can be used as follows: `@code_optimizations /connect <app id>`. Below is a screenshot of what the result may look like:
+Once you have the App ID, the connect command can be used as follows: `@code_optimizations /connect <app id>`. Below is a screenshot of what the result may look like:
 
 ![](images/6.png)
 
@@ -87,10 +85,10 @@ The command will pull in the top issues from Code Optimizations, map them to sou
 #### @code_optimizations /optimize
 
 The `@code_optimizations /optimize` command can be used in the following two ways:
-1.	`@code_optimizations /optimize <issue number>`: We call optimize along with the GitHub issue id for an issue created by Code Optimizations service in Azure Portal. This is typically used in conjunction with the `/issues` command via the “Generate Fix!” button (as seen in the above screenshot). Example usage: `@code_optimizations /optimize 5`, where `5` is the id of the GitHub issue we would like to fix.
+1.	`@code_optimizations /optimize <issue number>`: We call optimize along with the GitHub issue id for an issue created by Code Optimizations service in Azure Portal. This is typically used in conjunction with the `/issues` command via the “Generate Fix!” button (as seen in the above screenshot). Example usage: `@code_optimizations /optimize 5`, where `5` is the ID of the GitHub issue we would like to fix.
 2.	Code selection + `@code_optimizations /optimize`: The other way to use `/optimize` is to directly trigger it on some code, in case the user wants to proactively optimize some code they think has a perf issue. The user would first select some code they think is problematic or place their cursor in a method that has some perf issue and then call the `/optimize` command in Copilot chat.
 
-The issue number is the id of a GitHub issue created by Code Optimizations. The command will then pull in body of the issue, which contains details like the call stack, CPU usage, etc. It then uses the call stack to find the relevant code and then use our model to generate a code fix. Allow the model endpoint some time to generate the fix. Below is an example of what a usage may look like:
+The issue number is the ID of a GitHub issue created by Code Optimizations. The command will then pull in body of the issue, which contains details like the call stack, CPU usage, etc. It then uses the call stack to find the relevant code and then use our model to generate a code fix. Allow the model endpoint some time to generate the fix. Below is an example of what a usage may look like:
 
 ![](images/3.png)
 
