@@ -52,7 +52,7 @@ This will also trigger the authentication process. If you’re installing the ex
 
 Do you have Azure Application Insights and Application Insights Profiler enabled for your .NET service? If not, you have two options:
 1. Click the following links to set up [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=bicep) and [Application Insights Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler).
-2. If you don't want to set those up, go to Option 2 for a lightweight version of the VS Code Extension.
+2. If you don't want to set those up, go to [Option 2](#Option2) for a lightweight version of the VS Code Extension.
 
 If you already have those set up, go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
 
