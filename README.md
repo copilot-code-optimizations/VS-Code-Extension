@@ -50,14 +50,15 @@ This will also trigger the authentication process. If you’re installing the ex
 
 ### Code Optimizations
 
-Do you have Azure Application Insights enabled for your .NET service? Click here to view your Code Optimizations for each resource.
-If you don't have Application insights with the profiler enabled, click here for documentation to set this up.
+Do you have Azure Application Insights and Application Insights Profiler enabled for your .NET service? If not, you have two options:
+1. Click the following links to set up [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=bicep) and [Application Insights Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler).
+2. If you don't want to set those up, go to Option 2 for a lightweight version of the VS Code Extension.
 
-Or go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
+If you already have those set up, you have two ways to access your Code Optimizations: 
+1. Click here to view your Code Optimizations for each resource.
+2. Go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
 
 ![](images/1.png)
-
-If you don't have an Application Insights resource and don't want to set one up, go to Option 2 for a lightweight version of the VS Code Extension.
 
 Once you’re in Code Optimizations, you should see something such as the following. By default, Code Optimizations shows you insights from the last 24 hours. It’s possible that there aren’t any insights if there haven’t been any profiles in the last 24 hours or none of the profiles analyzed have issues. In this case, you can change the time range to a larger window like 7 days or 30 days:
 
