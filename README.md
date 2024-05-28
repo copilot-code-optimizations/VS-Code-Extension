@@ -10,27 +10,18 @@
 ## GitHub Account
 For the extension to work, we need your GitHub account to meet the following criteria:
 1.	**Have a Copilot subscription.** If you don’t have it, this page explains how you can get it for free: [Copilot organization | Microsoft Open Source Management](https://repos.opensource.microsoft.com/orgs/MicrosoftCopilot).
-2.	**It cannot be a “<alias>_microsoft” account.** These accounts don’t work with our extension.
-3.	**Be within [Microsoft](https://github.com/microsoft) or [Copilot-Code-Optimizations](https://github.com/copilot-code-optimizations) org on GitHub with a public affiliation.** Your membership needs to be public.
+2.	**Be within [Copilot-Code-Optimizations](https://github.com/copilot-code-optimizations) org on GitHub with a public affiliation.** Your membership needs to be public.
 
 A quick way to verify that is to search for your GitHub username within the members list and see if the affiliation is public, as indicated in the screenshot. Our extension needs to be able to see your account in the org to authenticate you.
 
-- [Members · People · microsoft (github.com)](https://github.com/orgs/microsoft/people)
 - [Members · People · copilot-code-optimizations (github.com)](https://github.com/orgs/copilot-code-optimizations/people)
 
 ![](images/9.png)
 
-Add yourself to the Microsoft org on GitHub using the [open source portal](https://aka.ms/opensource/portal). This [document](https://microsoft.sharepoint-df.com/:w:/r/teams/SPINNGFS/_layouts/15/doc2.aspx?sourcedoc=%7B3C6B2F46-59C0-4D60-9193-8EBB5A6B7FB6%7D&file=How%20to%20Join%20Microsoft%20GitHub%20Organization.docx&action=default&mobileredirect=true&DefaultItemOpen=1&wdLOR=c73D04C9A-7560-491F-8B78-C5C603211761) further explains how to add your GitHub account to the Microsoft org. Your membership needs to be public i.e. the Microsoft or Code Optimizations org logo should be visible from your GitHub profile.
-
 ## VS Code Insiders
 
 1)	Make sure to have the latest version of [VS Code Insiders](https://code.visualstudio.com/insiders/).  
-2)	If not already installed, install GitHub Copilot Chat extension and log in with your Microsoft or Copilot-Code-Optimizations affiliated GitHub account.
-3)	Our extension uses a set of new VS Code APIs that aren’t enabled by default yet. To enable the proposed APIs, you need to do the following:
--   Activate the Command Palette (Ctrl+Shift+P) and select the Preferences: Configure Runtime Arguments command from the dropdown menu.
--	Add the following to your list of arguments: 
-"enable-proposed-api": ["Microsoft.code-optimizations"]. If the list already exists, add the flag to the existing list.
--	Save the file and restart VS Code Insiders.
+2)	If not already installed, install GitHub Copilot Chat extension and log in with your Copilot-Code-Optimizations affiliated GitHub account.
 
 ## az login
 
@@ -39,7 +30,7 @@ For the final prerequisite step, open a new terminal then enter the command `az 
 <a name="Installation"></a>
 # Installation 
 
-Download the [VSIX file](https://dev.azure.com/devdiv/OnlineServices/_git/PerfChatAgent?path=/vsix) from this repo. Always use this repo as it will have the latest version of the extension.
+Download the [VSIX file](https://...) from this current repo. Always use this repo as it will have the latest version of the extension.
 
 Note: Do not double click on the VSIX as this will not install it correctly. Instead install it through VS Code itself. Click on extensions icon on the left-hand side, then using the triple dot icon select the “Install from VSIX ...” option, as shown below:
 
@@ -59,17 +50,14 @@ This will also trigger the authentication process. If you’re installing the ex
 
 ### Code Optimizations
 
-Do you own a service? It’s possible that we have your service onboarded onto Code Optimizations! To check if your service is onboarded, find the Code Optimizations resource for your service in this [resource group](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/resource/subscriptions/3cd95ff9-ac62-4b5c-8240-0cd046687ea0/resourceGroups/FirstPartyAzureProfilerInsights/overview).
+Do you have Azure Application Insights enabled for your .NET service? Click here to view your Code Optimizations for each resource.
+If you don't have Application insights with the profiler enabled, click here for documentation to set this up.
 
-Let’s say your service is called `NewsIngestionServices`. You could search for it in the search bar and find the corresponding Application Insights resource:
-
-![](images/0.png)
-
-Once you click on it, go into the performance blade and click on “Code Optimizations” as shown below (underlined):
+Or go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
 
 ![](images/1.png)
 
-If you don’t find a resource associated with your service, it means we don’t have you onboarded. But don’t fret, we’re happy to onboard any service that’s sending profiles to [Azure Profiler](https://azureprofiler.azurewebsites.net/)! Please contact us at codeoptimizations@microsoft.com to be onboarded.
+If you don't have an Application Insights resource and don't want to set one up, go to Option 2 for a lightweight version of the VS Code Extension.
 
 Once you’re in Code Optimizations, you should see something such as the following. By default, Code Optimizations shows you insights from the last 24 hours. It’s possible that there aren’t any insights if there haven’t been any profiles in the last 24 hours or none of the profiles analyzed have issues. In this case, you can change the time range to a larger window like 7 days or 30 days:
 
