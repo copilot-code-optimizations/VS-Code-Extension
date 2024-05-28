@@ -55,7 +55,7 @@ Do you have Azure Application Insights and Application Insights Profiler enabled
 2. If you don't want to set those up, go to Option 2 for a lightweight version of the VS Code Extension.
 
 If you already have those set up, you have two ways to access your Code Optimizations: 
-1. Click here to view your Code Optimizations for each resource.
+1. [Click here](https://aka.ms/CodeOptimizations) to view your Code Optimizations for each resource.
 2. Go into the performance blade of your Application Insights resource and click on “Code Optimizations” as shown below (underlined):
 
 ![](images/1.png)
