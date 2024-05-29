@@ -30,7 +30,7 @@ For the final prerequisite step, open a new terminal then enter the command `az 
 <a name="Installation"></a>
 # Installation 
 
-Download the [VSIX file](https://...) from this current repo. Always use this repo as it will have the latest version of the extension.
+Download the [VSIX file](https://github.com/copilot-code-optimizations/VS-Code-Extension/tree/main/vsix) from this current repo. Always use this repo as it will have the latest version of the extension.
 
 Note: Do not double click on the VSIX as this will not install it correctly. Instead install it through VS Code itself. Click on extensions icon on the left-hand side, then using the triple dot icon select the “Install from VSIX ...” option, as shown below:
 
