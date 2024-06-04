@@ -13,9 +13,9 @@ For the extension to work, you need to have a Copilot subscription.
 ## Application Insights Code Optimizations
 1. Make sure Azure Application Insights and Application Insights Profiler is enabled for your .NET apps. If not, follow these instructions [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=bicep) and [Application Insights Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler).
 2. Validate that Code Optimizations are identified for your application - go into the **Performance** blade of your Application Insights resource and click on “**Code Optimizations**” as shown below
-<img src="IMAGES/CodeOptimizations1.png" width="600" />
+![](images/CodeOptimizations1.png)
 
-4. Please note (a) the Application Insights resource name, (b) the account that you are using to sign into Azure portal.
+3. Please note (a) the Application Insights resource name, (b) the account that you are using to sign into Azure portal.
 
 ## VS Code Insiders
 
