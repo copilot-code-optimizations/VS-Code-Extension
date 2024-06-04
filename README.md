@@ -8,15 +8,7 @@
 <a name="Prerequisites"></a>
 # Prerequisites 
 ## GitHub Account
-For the extension to work, we need your GitHub account to meet the following criteria:
-1.	**Have a Copilot subscription.** 
-2.	**Be within [Copilot-Code-Optimizations](https://github.com/copilot-code-optimizations) org on GitHub with a public affiliation.** Your membership needs to be public.
-
-A quick way to verify that is to search for your GitHub username within the members list and see if the affiliation is public, as indicated in the screenshot. Our extension needs to be able to see your account in the org to authenticate you.
-
-- [Members · People · copilot-code-optimizations (github.com)](https://github.com/orgs/copilot-code-optimizations/people)
-
-![](images/9.png)
+For the extension to work, you need to have a Copilot subscription.
 
 ## VS Code Insiders
 
